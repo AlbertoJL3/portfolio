@@ -2,7 +2,7 @@ import React, { useRef, useMemo } from 'react';
 import { useFrame } from '@react-three/fiber';
 import * as THREE from 'three';
 
-const FibonacciAnimation = () => {
+function FibonacciAnimation() {
   const meshRef = useRef();
 
   const fibonacciSequence = useMemo(() => {
@@ -63,6 +63,6 @@ const FibonacciAnimation = () => {
       <meshBasicMaterial vertexColors side={THREE.DoubleSide} />
     </mesh>
   );
-};
+}
 
 export default FibonacciAnimation;

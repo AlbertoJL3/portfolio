@@ -7,7 +7,7 @@ import Projects from './components/Projects';
 import About from './components/About';
 import Arcade from './components/Arcade';
 import Contact from './components/Contact';
-import FibonacciAnimation from './components/FibonacciAnimation';
+import FibonacciAnimation from './components/fibonacciAnimation';
 
 function App() {
   return (
@@ -29,4 +29,3 @@ function App() {
 }
 
 export default App;
-
