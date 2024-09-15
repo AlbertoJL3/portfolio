@@ -19,3 +19,5 @@ const Hobbies = () => {
     </div>
   );
 };
+
+export default Hobbies;

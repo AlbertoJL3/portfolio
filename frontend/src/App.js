@@ -1,30 +1,28 @@
-// App.js
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import { Canvas } from '@react-three/fiber';
-import Navbar from './components/Navbar';
+import Navbar from './components/NavBar';
+import Home from './components/Home';
 import Projects from './components/Projects';
-import About from './components/About';
-
+import Experience from './components/Experience';
+import Hobbies from './components/Hobbies';
 import Contact from './components/Contact';
-import FibonacciAnimation from './components/fibonacciAnimation';
+import './index.css';
 
-function App() {
+const App = () => {
   return (
     <Router>
-      <div className="App">
+      <div className="min-h-screen bg-gray-100">
         <Navbar />
-          <Canvas>
-            <Routes>
-                <Route path="/projects" component={Projects} />
-                <Route path="/about" component={About} />
-                <Route path="/contact" component={Contact} />
-            </Routes>
-            
-          </Canvas>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/projects" element={<Projects />} />
+          <Route path="/experience" element={<Experience />} />
+          <Route path="/hobbies" element={<Hobbies />} />
+          <Route path="/contact" element={<Contact />} />
+        </Routes>
       </div>
     </Router>
   );
-}
+};
 
 export default App;
