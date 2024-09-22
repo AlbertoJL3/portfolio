@@ -1,10 +1,10 @@
 import React from 'react';
-import sailing from '../images/sailing.jpg';
-import golf from '../images/golf.jpg';
-import wingFoil from '../images/IMG_4589.jpg';
-import keyboards from '../images/Keyboards.jpg';
-import running from '../images/IMG_5795.JPG';
-import cinema from '../images/ford.PNG';
+import sailing from '../images/hobbies/sailing.jpg';
+import golf from '../images/hobbies/golf.jpg';
+import wingFoil from '../images/hobbies/IMG_4589.jpg';
+import keyboards from '../images/hobbies/Keyboards.jpg';
+import running from '../images/hobbies/IMG_5795.JPG';
+import cinema from '../images/hobbies/ford.PNG';
 
 const HobbyCard = ({ title, description, mediaType, mediaSrc }) => (
   <div className="bg-white rounded-lg shadow-md overflow-hidden">
@@ -35,8 +35,8 @@ const Hobbies = () => {
           mediaSrc={sailing}
         />
         <HobbyCard 
-          title="Surfing" 
-          description="I'm what they call on the beach a water-man. I love everything from surfing, to kite-boarding, to wing-foiling. Wing-foiling is my favorite, it combines all the watersports into a single activity."
+          title="Foiling" 
+          description="I'm what they call on the beach a water-man. I love everything from surfing, to kite-boarding, to wing-foiling, and have put in practice to all of them. Wing-foiling is my favorite, it combines all the watersports into a single activity."
           mediaType="image"
           mediaSrc={wingFoil}
         />
