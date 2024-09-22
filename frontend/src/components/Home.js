@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import profileImage from '../images/hobbies/IMG_5978.jpg';
 import cuaImage from '../images/edu/cua_logo.png';
 import columbiaImage from '../images/edu/columbia.png';
@@ -6,6 +6,13 @@ import northeasternImage from '../images/edu/NEU.png';
 import github from '../images/socials/github.png';
 import linkedin from '../images/socials/linkedin.webp';
 import instagram from '../images/socials/insta.png';
+import python from '../images/programming/python.png';
+import javascript from '../images/programming/javascript.png';
+import react from '../images/programming/react.png';
+import css from '../images/programming/css.png';
+import html from '../images/programming/html.png';
+import sql from '../images/programming/sql.png';
+import mongodb from '../images/programming/mongo.png';
 
 const EducationItem = ({ logo, alt, description }) => (
   <li className="flex items-center space-x-4 mb-4">
@@ -37,21 +44,38 @@ const EducationSection = () => (
   </div>
 );
 
-const ProgrammingLanguagesSection = () => (
-  <div className="mb-6">
-    <h2 className="text-2xl font-semibold text-gray-800 mb-2">Programming Languages</h2>
-    <div className="flex flex-wrap gap-2">
-      {['Python', 'JavaScript', 'C', 'C++', 'SQL', 'HTML', 'CSS'].map(lang => (
-        <span key={lang} className="bg-gray-200 text-gray-700 px-3 py-1 rounded-full text-sm">
-          {lang}
-        </span>
-      ))}
-    </div>
+const ProgrammingLanguageItem = ({ name, icon }) => (
+  <div className="flex flex-col items-center m-2">
+    <img src={icon} alt={name} className="w-12 h-12 object-contain mb-2" />
+    <span className="text-sm text-gray-700">{name}</span>
   </div>
 );
 
-const Home = () => {
+const ProgrammingLanguagesSection = () => {
+  const languages = [
+    { name: 'Python', icon: python },
+    { name: 'JavaScript', icon: javascript },
+    { name: 'React', icon: react },
+    { name: 'CSS', icon: css },
+    { name: 'HTML', icon: html },
+    { name: 'SQL', icon: sql },
+    { name: 'MongoDB', icon: mongodb },
+    { name: 'TailwindCSS', icon: 'https://cdn.worldvectorlogo.com/logos/tailwind-css-2.svg' },
+  ];
 
+  return (
+    <div className="mb-6">
+      <h2 className="text-2xl font-semibold text-gray-800 mb-4">Frameworks & Languages</h2>
+      <div className="flex flex-wrap gap-4">
+        {languages.map((lang) => (
+          <ProgrammingLanguageItem key={lang.name} name={lang.name} icon={lang.icon} />
+        ))}
+      </div>
+    </div>
+  );
+};
+
+const Home = () => {
   return (
     <div className="flex flex-col min-h-screen">
       <div className="container mx-auto mt-8 p-4 flex-grow">
@@ -67,7 +91,7 @@ const Home = () => {
             <h1 className="text-4xl font-bold mb-4 text-gray-800">Welcome!</h1>
             <h2 className="text-2xl font-semibold text-gray-800 mb-2">About Me</h2>
             <p className="text-lg mb-6 text-gray-600">
-            I'm a mechanical engineer and curious software developer, passionate about making web applications, designing mechanical systems, and spaceflight technology. I graduated with a degree in Mechanical Engineering, and learned programming on my own while working my first job. It was at that time that I decided to attend a software bootcamp after work days and code projects on weekends. After 18 months of creating projects and working as a software engineer, I've decided to move to Boston to pursue a career in software, and pursue a Master's degree in Computer Science. I'm currently looking for a full-time position that promotes growth and inclusion.
+              I'm a mechanical engineer and curious software developer, passionate about making web applications, designing mechanical systems, and spaceflight technology. I graduated with a degree in Mechanical Engineering, and learned programming on my own while working my first job. It was at that time that I decided to attend a software bootcamp after work days and code projects on weekends. After 18 months of creating projects and working as a software engineer, I've decided to move to Boston to pursue a career in software, and pursue a Master's degree in Computer Science. I'm currently looking for a full-time position that promotes growth and inclusion.
             </p>
             <EducationSection />
             <ProgrammingLanguagesSection />
