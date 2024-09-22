@@ -76,13 +76,13 @@ const Home = () => {
       </div>
       <footer className="bg-gray-100 py-4">
         <div className="container mx-auto flex justify-center items-center space-x-6">
-          <a href="https://www.linkedin.com/in/yourusername" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.linkedin.com/in/albertojl3" target="_blank" rel="noopener noreferrer">
             <img src={linkedin} alt="LinkedIn" className="w-6 h-6" />
           </a>
-          <a href="https://www.instagram.com/yourusername" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.instagram.com/betolopezpr" target="_blank" rel="noopener noreferrer">
             <img src={instagram} alt="Instagram" className="w-6 h-6" />
           </a>
-          <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer">
+          <a href="https://github.com/albertojl3" target="_blank" rel="noopener noreferrer">
             <img src={github} alt="GitHub" className="w-6 h-6" />
           </a>
         </div>

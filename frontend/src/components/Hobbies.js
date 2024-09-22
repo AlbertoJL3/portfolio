@@ -30,7 +30,7 @@ const Hobbies = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         <HobbyCard 
           title="Sailing" 
-          description="Traveling on the high seas, nothing like letting out my inner-pirate every once in a while with my family. Longest trip in distance traveled in a straight line is Florida to Puerto Rico."
+          description="I'm a big fan of sailing the high seas, nothing like letting out my inner-pirate every once in a while with family. Longest trip in distance traveled in a straight line is Florida to Puerto Rico."
           mediaType="image"
           mediaSrc={sailing}
         />
@@ -42,7 +42,7 @@ const Hobbies = () => {
         />
         <HobbyCard 
           title="Golf" 
-          description="I'm also an avid golfer. Puerto Rico is a fantastic golf destination, and I've been playing for about a year or so and gotten my handicap to about +16. It's not much but it's honest work. I've golfed world-wide including in Iceland!"
+          description="I'm also an avid golfer. Puerto Rico is a fantastic golf destination, and I've been playing for about a year or so and gotten my handicap to about +16. It's not much but it's honest work."
           mediaType="image"
           mediaSrc={golf}
         />
@@ -54,7 +54,7 @@ const Hobbies = () => {
         />
         <HobbyCard 
           title="Mechanical Keyboards" 
-          description="I love designing keyboards, and keyboard PCBs. It started as a small project to learn more about how modern electronics work, and are made. I've now designed 3 keyboards, and try to make one every few months. This one is by far my favorite."
+          description="I love designing keyboards, and keyboard PCBs. It started as a small project to learn more about how modern electronics work. I've now designed 3 keyboards, and try to make one every few months. This one is by far my favorite."
           mediaType="image"
           mediaSrc={keyboards}
         />
