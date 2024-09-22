@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { HashRouter as Router, Route, Routes } from 'react-router-dom';
 import Navbar from './components/NavBar';
 import Home from './components/Home';
 import Projects from './components/Projects';
@@ -15,7 +15,6 @@ const App = () => {
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/personal-site" element={<Home />} />
           <Route path="/projects" element={<Projects />} />
           <Route path="/experience" element={<Experience />} />
           <Route path="/hobbies" element={<Hobbies />} />
