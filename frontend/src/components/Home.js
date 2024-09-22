@@ -6,8 +6,6 @@ import northeasternImage from '../images/edu/NEU.png';
 import github from '../images/socials/github.png';
 import linkedin from '../images/socials/linkedin.webp';
 import instagram from '../images/socials/insta.png';
-import abtMe from '../public/about_me.txt';
-import { use } from 'react';
 
 const EducationItem = ({ logo, alt, description }) => (
   <li className="flex items-center space-x-4 mb-4">
@@ -53,14 +51,6 @@ const ProgrammingLanguagesSection = () => (
 );
 
 const Home = () => {
-  const [aboutMeContent, setAboutMeContent] = useState('');
-
-useEffect(() => { 
-  fetch(abtMe)
-    .then(response => response.text())
-    .then(text => setAboutMeContent(text));
-}
-, []);
 
   return (
     <div className="flex flex-col min-h-screen">
@@ -77,7 +67,7 @@ useEffect(() => {
             <h1 className="text-4xl font-bold mb-4 text-gray-800">Welcome!</h1>
             <h2 className="text-2xl font-semibold text-gray-800 mb-2">About Me</h2>
             <p className="text-lg mb-6 text-gray-600">
-              {aboutMeContent || 'Loading...'}
+            I'm a mechanical engineer and curious software developer, passionate about making web applications, designing mechanical systems, and spaceflight technology. I graduated with a degree in Mechanical Engineering, and learned programming on my own while working my first job. It was at that time that I decided to attend a software bootcamp after work days and code projects on weekends. After 18 months of creating projects and working as a software engineer, I've decided to move to Boston to pursue a career in software, and pursue a Master's degree in Computer Science. I'm currently looking for a full-time position that promotes growth and inclusion.
             </p>
             <EducationSection />
             <ProgrammingLanguagesSection />
