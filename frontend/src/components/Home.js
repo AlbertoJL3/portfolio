@@ -6,6 +6,8 @@ import northeasternImage from '../images/edu/NEU.png';
 import github from '../images/socials/github.png';
 import linkedin from '../images/socials/linkedin.webp';
 import instagram from '../images/socials/insta.png';
+import abtMe from '../public/about_me.txt';
+import { use } from 'react';
 
 const EducationItem = ({ logo, alt, description }) => (
   <li className="flex items-center space-x-4 mb-4">
@@ -53,12 +55,12 @@ const ProgrammingLanguagesSection = () => (
 const Home = () => {
   const [aboutMeContent, setAboutMeContent] = useState('');
 
-  useEffect(() => {
-    fetch('/about_me.txt')
-      .then(response => response.text())
-      .then(text => setAboutMeContent(text))
-      .catch(error => console.error('Error loading About Me content:', error));
-  }, []);
+useEffect(() => { 
+  fetch(abtMe)
+    .then(response => response.text())
+    .then(text => setAboutMeContent(text));
+}
+, []);
 
   return (
     <div className="flex flex-col min-h-screen">
