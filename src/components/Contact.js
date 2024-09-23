@@ -6,19 +6,19 @@ import emailLogo from '../images/socials/gmail.png';
 import phoneLogo from '../images/socials/phone.webp';
 
 const ContactItem = ({ logo, alt, label, href, value }) => (
-  <li className="flex items-center space-x-4 mb-6">
-    <div className="w-10 h-10 flex items-center justify-center bg-gray-200 rounded-full">
-      <img src={logo} alt={alt} className="w-6 h-6 object-contain" />
+  <li className="flex items-center space-x-6 mb-6"> 
+    <div className="w-12 h-12 flex-shrink-0 flex items-center justify-center bg-gray-200 rounded-full">
+      <img src={logo} alt={alt} className="w-7 h-7 object-contain" /> 
     </div>
     <div className="flex-grow">
-      <span className="font-semibold text-gray-700">{label}</span>
+      <span className="font-semibold text-gray-700 text-lg">{label}</span>
       <br />
       {href ? (
-        <a href={href} className="text-blue-600 hover:text-blue-800 transition-colors duration-200">
+        <a href={href} className="text-blue-600 hover:text-blue-800 transition-colors duration-200 text-lg"> 
           {value}
         </a>
       ) : (
-        <span className="text-gray-600">{value}</span>
+        <span className="text-gray-600 text-lg">{value}</span>
       )}
     </div>
   </li>
@@ -26,11 +26,11 @@ const ContactItem = ({ logo, alt, label, href, value }) => (
 
 const Contact = () => {
   return (
-    <div className="container mx-auto mt-8 p-4 max-w-2xl">
-      <h1 className="text-3xl font-bold mb-6 text-gray-800">Contact Me</h1>
-      <div className="space-y-4">
-        <p className="text-gray-600 mb-6">Feel free to reach out to me through any of the following channels:</p>
-        <ul className="list-none">
+    <div className="container mx-auto mt-20 p-6 max-w-3xl"> {/* Increased top margin and max width */}
+      <h1 className="text-4xl font-bold mb-8 text-gray-800">Contact Me</h1> {/* Larger heading and more bottom margin */}
+      <div className="space-y-6 bg-white shadow-lg rounded-lg p-8"> {/* Added a card-like container */}
+        <p className="text-gray-600 text-xl mb-8">Feel free to reach out to me through any of the following channels:</p> {/* Increased font size and margin */}
+        <ul className="list-none space-y-6"> {/* Added vertical spacing between items */}
           <ContactItem
             logo={linkedinLogo}
             alt="LinkedIn logo"

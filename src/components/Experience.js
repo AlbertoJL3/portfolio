@@ -11,7 +11,7 @@ const ExperienceItem = ({ title, company, period, description }) => (
 
 const Experience = () => {
   return (
-    <div className="container mx-auto mt-8 p-4">
+    <div className="container mx-auto mt-16 p-4">
       <h1 className="text-3xl font-bold mb-6">Professional Experience</h1>
       <div className="space-y-6">
         <ExperienceItem

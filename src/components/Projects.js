@@ -222,7 +222,7 @@ const Projects = () => {
   ];
 
   return (
-    <div className="container mx-auto mt-8 p-4 h-screen flex flex-col">
+    <div className="container mx-auto mt-16 p-4 min-h-screen flex flex-col">
       <h1 className="text-3xl font-bold mb-6 text-gray-800">Projects</h1>
       <div className={`flex-1 overflow-hidden ${isMobile ? 'flex flex-col' : 'flex'}`}>
         <div className={`${isMobile ? 'w-full' : 'w-1/3 pr-4 border-r'} overflow-y-auto`}>

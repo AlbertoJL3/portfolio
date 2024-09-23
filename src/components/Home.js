@@ -78,7 +78,7 @@ const ProgrammingLanguagesSection = () => {
 const Home = () => {
   return (
     <div className="flex flex-col min-h-screen">
-      <div className="container mx-auto mt-8 p-4 flex-grow">
+      <div className="container mx-auto mt-16 p-4 flex-grow"> {/* Changed pt-20 to mt-16 */}
         <div className="flex flex-col lg:flex-row items-start space-y-8 lg:space-y-0 lg:space-x-8">
           <div className="flex-shrink-0 w-full lg:w-auto flex justify-center">
             <img
