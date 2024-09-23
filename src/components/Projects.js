@@ -13,6 +13,7 @@ import cmmAutomationImage3 from '../projects/cmm/fixture3.jpg';
 import cmmAutomationImage4 from '../projects/cmm/fixture4.jpg';
 import quadcopterImage from '../projects/drone/drone1.jpg';
 import quadcopterTeam from '../projects/drone/drone2.jpg';
+import explore from '../projects/cinebud/explore.png';
 
 const ProjectListItem = ({ project, isSelected, onClick, isMobile }) => (
   <div 
@@ -91,6 +92,19 @@ const ProjectDetails = ({ project }) => {
         <h3 className="text-xl font-semibold text-gray-700 mb-2">Overview</h3>
         <p className="text-gray-600">{project.overview}</p>
       </section>
+      {project.github && (
+        <section>
+          <h3 className="text-xl font-semibold text-gray-700 mb-2">GitHub</h3>
+          <a 
+            href={project.github} 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            className="text-blue-600 hover:text-blue-800 transition-colors duration-200"
+          >
+            {project.github}
+          </a>
+        </section>
+      )}
       <section>
         <h3 className="text-xl font-semibold text-gray-700 mb-2">Features</h3>
         <ul className="list-disc list-inside text-gray-600">
@@ -156,6 +170,7 @@ const Projects = () => {
       title: "Cinebud",
       shortDescription: "A movie recommendation system using OpenAI API",
       overview: "Cinebud is a project inspired by my love for movies and my work in Pratt & Whitney. It leverages the OpenAI API to create a movie recommendation system for when you don't know what to watch.",
+      github: "https://github.com/albertojl3/cinebud",
       features: [
         "Mood-based movie recommendations",
         "Integration with OpenAI API",
@@ -166,13 +181,15 @@ const Projects = () => {
       images: [
         { src: cineBudLanding, alt: "Cinebud Landing Page" },
         { src: cineBudResults, alt: "Cinebud Results Page" },
-        { src: cineBudWatchlist, alt: "Cinebud Watchlist" }
+        { src: cineBudWatchlist, alt: "Cinebud Watchlist" }, 
+        { src: explore, alt: "Cinebud Explore" }
       ]
     },
     {
       title: "TalkIO",
       shortDescription: "A real-time chat application",
       overview: "TalkIO is a full-stack real-time chat application built using modern web technologies.",
+      github: "https://github.com/albertojl3/talkio",
       features: [
         "User authentication",
         "Real-time messaging",
@@ -222,7 +239,7 @@ const Projects = () => {
   ];
 
   return (
-    <div className="container mx-auto mt-16 p-4 min-h-screen flex flex-col">
+    <div className="container mx-auto mt-16 p-4 h-screen flex flex-col">
       <h1 className="text-3xl font-bold mb-6 text-gray-800">Projects</h1>
       <div className={`flex-1 overflow-hidden ${isMobile ? 'flex flex-col' : 'flex'}`}>
         <div className={`${isMobile ? 'w-full' : 'w-1/3 pr-4 border-r'} overflow-y-auto`}>
