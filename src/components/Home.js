@@ -91,7 +91,7 @@ const Home = () => {
             <h1 className="text-4xl font-bold mb-4 text-gray-800">Welcome!</h1>
             <h2 className="text-2xl font-semibold text-gray-800 mb-2">About Me</h2>
             <p className="text-lg mb-6 text-gray-600">
-              I'm a mechanical engineer and curious software developer, passionate about making web applications, designing mechanical systems, and spaceflight technology. I graduated with a degree in Mechanical Engineering, and learned programming on my own while working my first job. It was at that time that I decided to attend a software bootcamp after work days and code projects on weekends. After 18 months of creating projects and working as a software engineer, I've decided to move to Boston to pursue a career in software, and pursue a Master's degree in Computer Science. I'm currently looking for a full-time position that promotes growth and inclusion.
+              I'm a mechanical engineer and curious software developer, passionate about making web applications, designing mechanical systems, and spaceflight technology. I graduated with a degree in Mechanical Engineering, and learned programming on my own while working my first job. It was at that time that I decided to attend a software bootcamp after work and code projects on weekends. After 18 months of creating projects and working as a software engineer, I've decided to move to Boston to pursue a career in software, and pursue a Master's degree in Computer Science. I'm currently looking for a Co-Op position that can help me grow as a software engineer and learn from experienced professionals.
             </p>
             <EducationSection />
             <ProgrammingLanguagesSection />

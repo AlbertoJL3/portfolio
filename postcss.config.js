@@ -1,6 +1,12 @@
 module.exports = {
   plugins: {
     tailwindcss: {},
-    autoprefixer: {},
+    autoprefixer: {}, 
   },
+}
+
+module.exports = {
+  plugins: [
+    require('@tailwindcss/typography'),
+  ],
 }
