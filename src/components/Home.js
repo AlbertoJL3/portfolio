@@ -38,7 +38,7 @@ const EducationSection = () => (
       <EducationItem
         logo={northeasternImage}
         alt="Northeastern University logo"
-        description="M.S. in Computer Science, Northeastern University (In Progress)"
+        description="M.S. in Computer Science, Northeastern University (Starting January 2025)"
       />
     </ul>
   </div>
