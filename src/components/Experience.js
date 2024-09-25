@@ -33,7 +33,7 @@ const Experience = () => {
         <ExperienceItem
           title="Process Development Engineer"
           img = {artifexLogo}
-          company="Startup XYZ"
+          company="Artifex Solutions"
           period="June 2022 - June 2023"
           description="My time as a Process Development Engineer was a transformative experience for me. I learned what good design and process optimization was, and how it can impact the processes within a high-precision manufacturing company. My experience consisted of designing and implementing automated quality control processes for Class II medical devices, including orthopedic implants. I've developed my skills in creating custom fixturing for various tools, managing the entire process from design to manufacturing. A notable achievement was leading the development of a CMM quality process using a Zeiss Contura, which dramatically reduced QC turnaround time from 10 days to just 1 hour per batch. My experience also includes writing and executing risk-based Validation Plans, ensuring regulatory compliance, and applying GD&T standards for precise manufacturing drawings and fixture designs. Throughout my career, I've consistently drafted comprehensive validation and manufacturing documentation, contributing to the production of high-quality, compliant medical devices."
         />
