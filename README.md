@@ -10,4 +10,4 @@ This is the repository for my personal website with a little bit of information 
 - Github Pages
 
 ## Deployment
-![Click here](https://github.com/AlbertoJL3/portfolio) to access my site!
+![Click here](https://albertojl3.github.io/portfolio/) to access my site!
