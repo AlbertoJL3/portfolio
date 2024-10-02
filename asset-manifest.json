@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.d1e6279b.css",
-    "main.js": "/portfolio/static/js/main.45ca9d5e.js",
-    "static/js/453.80304955.chunk.js": "/portfolio/static/js/453.80304955.chunk.js",
+    "main.css": "/portfolio/static/css/main.104da854.css",
+    "main.js": "/portfolio/static/js/main.72496c83.js",
+    "static/js/453.d855a71b.chunk.js": "/portfolio/static/js/453.d855a71b.chunk.js",
     "static/media/Keyboards.jpg": "/portfolio/static/media/Keyboards.5b229435471441d32caf.jpg",
     "static/media/golf.jpg": "/portfolio/static/media/golf.2b7bd883908e325fdb89.jpg",
     "static/media/IMG_5978.jpg": "/portfolio/static/media/IMG_5978.74783d1d82edfe745d25.jpg",
@@ -20,14 +20,18 @@
     "static/media/fixture4.jpg": "/portfolio/static/media/fixture4.129f8f7582a13b52dc54.jpg",
     "static/media/IMG_5795.JPG": "/portfolio/static/media/IMG_5795.bdb74dac82f2a7eb65a0.JPG",
     "static/media/P&W.png": "/portfolio/static/media/P&W.1f588784980f7127b33f.png",
+    "static/media/Autocad-Logo.png": "/portfolio/static/media/Autocad-Logo.25fc1e8021b9ba5ffda9.png",
     "static/media/IMG_4589.jpg": "/portfolio/static/media/IMG_4589.77bfc7c7b71efd6383db.jpg",
     "static/media/NEU.png": "/portfolio/static/media/NEU.fb23fcdf5a6dd023bbec.png",
     "static/media/sql.png": "/portfolio/static/media/sql.85fb38d6773862e917f4.png",
     "static/media/talkio.png": "/portfolio/static/media/talkio.503ae2baef53e587c496.png",
+    "static/media/Matlab_Logo.png": "/portfolio/static/media/Matlab_Logo.709acbd1606aec9c6d61.png",
     "static/media/python.png": "/portfolio/static/media/python.d3fc9717009bf619e98c.png",
     "static/media/talkio2.png": "/portfolio/static/media/talkio2.d67dacb360a1d35ca0d9.png",
+    "static/media/AJL_BSME_.pdf": "/portfolio/static/media/AJL_BSME_.e29ad8cc72f82578393a.pdf",
     "static/media/react.png": "/portfolio/static/media/react.404167651b40e37feacf.png",
     "static/media/mongo.png": "/portfolio/static/media/mongo.e42d28391597ae82e2ca.png",
+    "static/media/Zeiss_logo.svg.png": "/portfolio/static/media/Zeiss_logo.svg.e6fbc2300946b421f304.png",
     "static/media/columbia.png": "/portfolio/static/media/columbia.b73f8c4c1623177939eb.png",
     "static/media/html.png": "/portfolio/static/media/html.0930f823bd3eda5eb85f.png",
     "static/media/phone.webp": "/portfolio/static/media/phone.860136406d0df5af75f1.webp",
@@ -35,14 +39,17 @@
     "static/media/insta.png": "/portfolio/static/media/insta.afe0c8f246d312301460.png",
     "static/media/cua_logo.png": "/portfolio/static/media/cua_logo.b06a7b0c8fc62e347d74.png",
     "static/media/linkedin.webp": "/portfolio/static/media/linkedin.fbb144ff3613ac634775.webp",
+    "static/media/solidworks.png": "/portfolio/static/media/solidworks.fab9bf3c1d1f48bbe8f6.png",
     "static/media/css.png": "/portfolio/static/media/css.0ca65abfc0c427bc3506.png",
+    "static/media/Minitab_Logo.png": "/portfolio/static/media/Minitab_Logo.dad65366b04e7389a298.png",
+    "static/media/labview.png": "/portfolio/static/media/labview.7c786fe8027a40c0b747.png",
     "index.html": "/portfolio/index.html",
-    "main.d1e6279b.css.map": "/portfolio/static/css/main.d1e6279b.css.map",
-    "main.45ca9d5e.js.map": "/portfolio/static/js/main.45ca9d5e.js.map",
-    "453.80304955.chunk.js.map": "/portfolio/static/js/453.80304955.chunk.js.map"
+    "main.104da854.css.map": "/portfolio/static/css/main.104da854.css.map",
+    "main.72496c83.js.map": "/portfolio/static/js/main.72496c83.js.map",
+    "453.d855a71b.chunk.js.map": "/portfolio/static/js/453.d855a71b.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d1e6279b.css",
-    "static/js/main.45ca9d5e.js"
+    "static/css/main.104da854.css",
+    "static/js/main.72496c83.js"
   ]
 }
