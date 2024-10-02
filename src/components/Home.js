@@ -13,6 +13,16 @@ import css from '../images/programming/css.png';
 import html from '../images/programming/html.png';
 import sql from '../images/programming/sql.png';
 import mongodb from '../images/programming/mongo.png';
+import solidworks from '../images/bsme/solidworks.png'
+import minitab from '../images/bsme/Minitab_Logo.png'
+import autocad from '../images/bsme/Autocad-Logo.png'
+import matlab from '../images/bsme/Matlab_Logo.png'
+import labview from '../images/bsme/labview.png'
+import fusion360 from '../images/bsme/afusion.png'
+import GDT from '../images/bsme/gdt.png'
+import zeiss from '../images/bsme/Zeiss_logo.svg.png'
+import resume from '../resume/AJL_BSME_.pdf'
+import { DownloadIcon } from 'lucide-react';
 
 const EducationItem = ({ logo, alt, description }) => (
   <li className="flex items-center space-x-4 mb-4">
@@ -38,21 +48,21 @@ const EducationSection = () => (
       <EducationItem
         logo={northeasternImage}
         alt="Northeastern University logo"
-        description="M.S. in Computer Science, Northeastern University (Starting January 2025)"
+        description="M.S. in Mechanical Engineering, Northeastern University, January 2025"
       />
     </ul>
   </div>
 );
 
-const ProgrammingLanguageItem = ({ name, icon }) => (
+const SkillItem = ({ name, icon }) => (
   <div className="flex flex-col items-center m-2">
     <img src={icon} alt={name} className="w-12 h-12 object-contain mb-2" />
     <span className="text-sm text-gray-700">{name}</span>
   </div>
 );
 
-const ProgrammingLanguagesSection = () => {
-  const languages = [
+const SkillsSection = () => {
+  const programmingSkills = [
     { name: 'Python', icon: python },
     { name: 'JavaScript', icon: javascript },
     { name: 'React', icon: react },
@@ -63,22 +73,58 @@ const ProgrammingLanguagesSection = () => {
     { name: 'TailwindCSS', icon: 'https://cdn.worldvectorlogo.com/logos/tailwind-css-2.svg' },
   ];
 
+  const engineeringTools = [
+    { name: 'SolidWorks', icon: solidworks },
+    { name: 'Minitab', icon: minitab },
+    { name: 'AutoCAD', icon: autocad },
+    { name: 'MATLAB', icon: matlab },
+    { name: 'LabVIEW', icon: labview },
+    { name: 'Fusion 360', icon: fusion360 },
+    { name: 'GD&T', icon: GDT },
+    { name: 'Calypso', icon: zeiss}
+  ];
+
   return (
     <div className="mb-6">
-      <h2 className="text-2xl font-semibold text-gray-800 mb-4">Frameworks & Languages</h2>
-      <div className="flex flex-wrap gap-4">
-        {languages.map((lang) => (
-          <ProgrammingLanguageItem key={lang.name} name={lang.name} icon={lang.icon} />
-        ))}
+      <h2 className="text-2xl font-semibold text-gray-800 mb-4">Skills & Tools</h2>
+      <div className="mb-4">
+        <h3 className="text-xl font-semibold text-gray-700 mb-2">Programming & Web Development</h3>
+        <div className="flex flex-wrap gap-4">
+          {programmingSkills.map((skill) => (
+            <SkillItem key={skill.name} name={skill.name} icon={skill.icon} />
+          ))}
+        </div>
+      </div>
+      <div>
+        <h3 className="text-xl font-semibold text-gray-700 mb-2">Engineering & Manufacturing</h3>
+        <div className="flex flex-wrap gap-4">
+          {engineeringTools.map((tool) => (
+            <SkillItem key={tool.name} name={tool.name} icon={tool.icon} />
+          ))}
+        </div>
       </div>
     </div>
   );
 };
 
+const ResumeDownloadSection = () => (
+  <div className="mb-6">
+    <h2 className="text-2xl font-semibold text-gray-800 mb-4">Download My Resume</h2>
+    <a
+      href={resume}
+      download
+      className="inline-flex items-center px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 transition duration-300"
+    >
+      <DownloadIcon className="mr-2 h-5 w-5" />
+      Download Resume
+    </a>
+  </div>
+);
+
 const Home = () => {
   return (
     <div className="flex flex-col min-h-screen">
-      <div className="container mx-auto mt-16 p-4 flex-grow"> {/* Changed pt-20 to mt-16 */}
+      <div className="container mx-auto mt-16 p-4 flex-grow">
         <div className="flex flex-col lg:flex-row items-start space-y-8 lg:space-y-0 lg:space-x-8">
           <div className="flex-shrink-0 w-full lg:w-auto flex justify-center">
             <img
@@ -91,10 +137,14 @@ const Home = () => {
             <h1 className="text-4xl font-bold mb-4 text-gray-800">Welcome!</h1>
             <h2 className="text-2xl font-semibold text-gray-800 mb-2">About Me</h2>
             <p className="text-lg mb-6 text-gray-600">
-              I'm a mechanical engineer and curious software developer, passionate about making web applications, designing mechanical systems, and spaceflight technology. I graduated with a degree in Mechanical Engineering, and learned programming on my own while working my first job. It was at that time that I decided to attend a software bootcamp after work and code projects on weekends. After 18 months of creating projects and working as a software engineer, I've decided to move to Boston to pursue a career in software, and pursue a Master's degree in Computer Science. I'm currently looking for a Co-Op position that can help me grow as a software engineer and learn from experienced professionals.
+              I'm a mechanical engineer with a passion for integrating advanced technologies into manufacturing processes. With a solid foundation in mechanical engineering and software development, I'm currently pursuing a Master's degree at Northeastern University, focusing on the intersection of mechanical engineering, machine learning, and automation in manufacturing.
+            </p>
+            <p className="text-lg mb-6 text-gray-600">
+              As I progress through my master's program, I'm actively seeking opportunities to apply my skills in real-world manufacturing environments. I'm eager to contribute to projects that involve the development of intelligent automation systems, the implementation of machine learning in quality control processes, or the creation of data-driven solutions for improving manufacturing efficiency.
             </p>
             <EducationSection />
-            <ProgrammingLanguagesSection />
+            <SkillsSection />
+            <ResumeDownloadSection />
           </div>
         </div>
       </div>
