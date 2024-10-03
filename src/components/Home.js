@@ -21,7 +21,7 @@ import labview from '../images/bsme/labview.png'
 import fusion360 from '../images/bsme/afusion.png'
 import GDT from '../images/bsme/gdt.png'
 import zeiss from '../images/bsme/Zeiss_logo.svg.png'
-import resume from '../resume/AJL_BSME_.pdf'
+import resume from '../resume/AJL_BSME_Resume.pdf'
 import { DownloadIcon } from 'lucide-react';
 
 const EducationItem = ({ logo, alt, description }) => (
@@ -137,10 +137,10 @@ const Home = () => {
             <h1 className="text-4xl font-bold mb-4 text-gray-800">Welcome!</h1>
             <h2 className="text-2xl font-semibold text-gray-800 mb-2">About Me</h2>
             <p className="text-lg mb-6 text-gray-600">
-              I'm a mechanical engineer with a passion for integrating advanced technologies into manufacturing processes. With a solid foundation in mechanical engineering and software development, I'm currently pursuing a Master's degree at Northeastern University, focusing on the intersection of mechanical engineering, machine learning, and automation in manufacturing.
+              I'm a mechanical engineer with a passion for integrating advanced technologies into flight systems. With a solid foundation in mechanical engineering and software development, in January of 2025, I will be pursuing a Master's degree for Mechanical Engineering at Northeastern University, focusing on the intersection of mechanical engineering, machine learning, and automation. I have experience with manufacturing processes, mechanical design, software development, and machine learning models. I've worked on the manufacturing floor interacting with interdisciplinary groups daily, and in Pratt & Whitney I've worked with engineers both remote and onsite. 
             </p>
             <p className="text-lg mb-6 text-gray-600">
-              As I progress through my master's program, I'm actively seeking opportunities to apply my skills in real-world manufacturing environments. I'm eager to contribute to projects that involve the development of intelligent automation systems, the implementation of machine learning in quality control processes, or the creation of data-driven solutions for improving manufacturing efficiency.
+              As I progress through my master's program, I'm actively seeking opportunities to apply my skills in real-world engineering environments be it through internships, Co-Ops or full-time positions. I'm eager to contribute to projects that involve the development of intelligent automation systems, the implementation of machine learning in design and manufacturing rocesses, or the creation of data-driven solutions for improving process efficiency.
             </p>
             <EducationSection />
             <SkillsSection />
