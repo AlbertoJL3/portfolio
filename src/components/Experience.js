@@ -1,6 +1,7 @@
 import React from 'react';
 import prattLogo from '../images/logo/P&W.png';
 import artifexLogo from '../images/logo/AFEX.jpg';
+import rennscotLogo from '../images/logo/renn.jpg';
 
 const ExperienceItem = ({ title, company, period, description, img }) => (
   <div className="bg-white p-6 rounded-lg shadow-md">
@@ -23,6 +24,13 @@ const Experience = () => {
     <div className="container mx-auto mt-16 p-4">
       <h1 className="text-3xl font-bold mb-6">Professional Experience</h1>
       <div className="space-y-6">
+        <ExperienceItem
+          title="Quality Engineer"
+          company="Rennscot Manufacturing"
+          period=" January 2025 - Present"
+          img={rennscotLogo}
+          description="In my current role as quality engineer I’ve learned deeply about quality control and inspection of tightly tolerances aerospace parts for space applications. My experience at Rennscot has taught me to be a leader to QC inspectors and programmers, provide feedback to machinists and have direct impact to the betterment of our product. I’ve applied my software skills to program data logging tools, dashboards for inspection schedules, and program Coordinate Measurements Machines reliably and accurately. "
+        />
         <ExperienceItem
           title="Software Engineer"
           company="Pratt & Whitney"

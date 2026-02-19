@@ -48,7 +48,7 @@ const EducationSection = () => (
       <EducationItem
         logo={northeasternImage}
         alt="Northeastern University logo"
-        description="M.S. in Mechanical Engineering, Northeastern University, January 2025"
+        description="M.S. in Engineering Management, Northeastern University, January 2025"
       />
     </ul>
   </div>
@@ -137,10 +137,10 @@ const Home = () => {
             <h1 className="text-4xl font-bold mb-4 text-gray-800">Welcome!</h1>
             <h2 className="text-2xl font-semibold text-gray-800 mb-2">About Me</h2>
             <p className="text-lg mb-6 text-gray-600">
-              I'm a mechanical engineer with a passion for integrating advanced technologies into flight systems. With a solid foundation in mechanical engineering and software development, in January of 2025, I will be pursuing a Master's degree for Mechanical Engineering at Northeastern University, focusing on the intersection of mechanical engineering, machine learning, and automation. I have experience with manufacturing processes, mechanical design, software development, and machine learning models. I've worked on the manufacturing floor interacting with interdisciplinary groups daily, and in Pratt & Whitney I've worked with engineers both remote and onsite. 
+              I'm a mechanical engineer with a passion for integrating advanced technologies into manufacturing and automation systems. I have experience with manufacturing processes, mechanical design, software development, and machine learning models. I've worked on the manufacturing floor interacting with interdisciplinary groups daily, including machinists, planners, purchasers, inspectors and programmers. My goal is to lead a team of engineers to success, be it as a project engineer, process engineer or just a manager. I'm interested in developing more than technical skills, and apply the management and leadership skills I've learned while attending my master's program at Northeastern University.
             </p>
             <p className="text-lg mb-6 text-gray-600">
-              As I progress through my master's program, I'm actively seeking opportunities to apply my skills in real-world engineering environments be it through internships, Co-Ops or full-time positions. I'm eager to contribute to projects that involve the development of intelligent automation systems, the implementation of machine learning in design and manufacturing rocesses, or the creation of data-driven solutions for improving process efficiency.
+              As I progress through my master's program, I'm actively seeking opportunities to apply my skills in real-world engineering environments. I'm eager to contribute to projects that involve the development of intelligent automation systems, the implementation of machine learning in design and manufacturing processes, or the creation of data-driven solutions for improving process efficiency.
             </p>
             <EducationSection />
             <SkillsSection />
